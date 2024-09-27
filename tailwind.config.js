@@ -3,22 +3,21 @@ module.exports = {
   content: ["./templates/**/*.{html,js}", "./templates/components/**/*.{html,js}"],
   theme: {
     extend: {
-      colors: {},
+      colors: {
+        'brown-nav': '#221a16', // Extend colors here
+        'brown-base': '#17120D',
+        'brown-h2': '#9d5505',
+      },
     },
   },
   daisyui: {
     themes: [
       {
-        socialbid: {
-          "primary": "#ff0000",
-          "secondary": "#f3f4f6",
-          "accent": "#bd0000",
-          "neutral": "#00232a",
-          "base-100": "#121212",
-          "info": "#fde047",
-          "success": "#84cc16",
-          "warning": "#fb923c",
-          "error": "#dc2626",
+        mcblock: {
+          "primary": "#9d5505", // Just an example for primary color in the mcblock theme
+          "brown-nav": "#221a16", // DaisyUI mcblock theme color
+          "bg-brown": '#17120D',
+          "brown-h2": '#9d5505'
         },
       },
       "light",
@@ -32,4 +31,4 @@ module.exports = {
     require('@tailwindcss/container-queries'),
     require('daisyui'),
   ],
-}
+};

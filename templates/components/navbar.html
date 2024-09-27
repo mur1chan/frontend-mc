@@ -1,0 +1,85 @@
+<div class="flex flex-col bg-brown-nav">
+  <!-- Top navbar (always visible) -->
+  <nav class="navbar justify-between gap-4 bg-base-300 border-b border-white">
+    <!-- Logo -->
+    <div class="navbar-start">
+      <a class="btn btn-ghost text-lg">
+        <img src="/static/logo.svg" alt="" class="w-10 h-10">
+        <div class="grid-cols-1 gap-y-0 space-y-0">
+          <div class="Mcblock text-white text-lg font-bold">MCBlock</div>
+          <div class="Launcher text-[#ad5e05] text-lg font-bold ">Launcher</div>
+        </div>
+
+      </a>
+    </div>
+
+
+    <!-- Search -->
+    <!-- Search options -->
+    <div class="navbar-center">
+      <!-- Left menu with Purchase button -->
+
+      <!-- Left of logo with Discord button -->
+      <a class="btn text-white btn-ghost text-lg" href="https://50receipts.com/join">
+        News
+      </a>
+
+      <!-- Centered logo -->
+      <a class="btn text-white btn-ghost text-lg">
+        About
+      </a>
+
+      <!-- Right of logo with Telegram button -->
+      <a class="btn text-white btn-ghost text-lg">
+        Community
+      </a>
+    </div>
+
+    <!-- Rightmost menu with Login button -->
+    <div class="navbar-end">
+      <a class="btn btn-ghost text-white text-lg">
+        <img src="/static/download.svg" alt="" style="background: url(/static/download.svg)   cover no-repeat;
+mix-blend-mode: screen;">
+        Download
+      </a>
+    </div>
+
+    <!-- Menu (Desktop) -->
+
+    <!-- Menu (Mobile) -->
+    <div class="dropdown dropdown-end md:hidden">
+      <button class="btn btn-ghost">
+        <i class="fa-solid fa-bars text-lg"></i>
+      </button>
+
+      <ul tabindex="0" class="dropdown-content menu z-[1] bg-base-200 p-4 rounded-box shadow w-56 gap-2">
+        <li><a>Create Account</a></li>
+        <a class="btn btn-primary btn-sm">
+          Log in
+          <i class="fa fa-arrow-right text-xs" aria-hidden="true"></i>
+        </a>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Botton navbar (mobile only) -->
+  <nav class="navbar sm:hidden bg-base-200 border-neutral">
+    <!-- Search -->
+    <div class="join w-full">
+      <!-- Search options -->
+      <select class="select select-sm select-bordered join-item">
+        <option selected>Good potions</option>
+        <option>Bad potions</option>
+        <option>Illegal potions</option>
+      </select>
+
+      <!-- Search input -->
+      <input class="join-item input input-sm input-bordered w-full" type="text" placeholder="Search">
+
+      <!-- Search button -->
+      <button class="join-item btn btn-sm btn-primary text-success-content">
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </button>
+    </div>
+  </nav>
+</div>
