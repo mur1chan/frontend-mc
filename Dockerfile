@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y git && apt-get clean
 WORKDIR /app
 
 # Clone the repository and set it up
-RUN git clone https://github.com/mur1chan/mc-frontend.git . && \
+RUN git clone https://github.com/mur1chan/frontend-mc.git . && \
     python -m venv .venv && \
     .venv/bin/pip install --upgrade pip && \
     .venv/bin/pip install -r requirements.txt
