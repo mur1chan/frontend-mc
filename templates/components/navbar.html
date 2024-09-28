@@ -1,65 +1,49 @@
 <div class="flex flex-col bg-brown-nav">
-  <!-- Top navbar (always visible) -->
-  <nav class="navbar justify-between gap-4 bg-base-300 border-b border-white">
+  <nav class="navbar px-4 bg-base-300 border-b border-white">
     <!-- Logo -->
     <div class="navbar-start">
-      <div class="btn btn-ghost text-lg">
-        <img src="/static/logo.svg" alt="" class="w-10 h-10">
-        <div class="flex flex-col items-start justify-center -mt-1">
-          <div class="MCBlock text-white text-lg font-bold leading-tight">MCBlock</div>
-          <div class="Launcher text-[#ad5e05] text-lg font-bold leading-tight -mt-1">Launcher</div>
+      <div class="btn btn-ghost p-0">
+        <img src="/static/logo.svg" alt="MCBlock Logo" class="w-8 h-8 mr-2">
+        <div class="flex flex-col items-start justify-center">
+          <div class="text-white text-sm md:text-lg font-bold leading-tight">MCBlock</div>
+          <div class="text-[#ad5e05] text-sm md:text-lg font-bold leading-tight -mt-1">Launcher</div>
         </div>
       </div>
     </div>
 
-
-    <!-- Search -->
-    <!-- Search options -->
-    <div class="navbar-center">
-      <!-- Left menu with Purchase button -->
-
-      <!-- Left of logo with Discord button -->
-      <a class="btn text-white btn-ghost text-lg" href="">
-        News
-      </a>
-
-      <!-- Centered logo -->
-      <a class="btn text-white btn-ghost text-lg">
-        About
-      </a>
-
-      <!-- Right of logo with Telegram button -->
-      <a class="btn text-white btn-ghost text-lg">
-        Community
-      </a>
+    <!-- Desktop Menu -->
+    <div class="hidden navbar-center md:flex items-center gap-4">
+      <a class="btn btn-ghost text-white text-sm" href="">News</a>
+      <a class="btn btn-ghost text-white text-sm">About</a>
+      <a class="btn btn-ghost text-white text-sm">Community</a>
     </div>
 
-    <!-- Rightmost menu with Login button -->
-    <div class="navbar-end">
-      <a class="btn btn-ghost text-white text-lg">
-        <img src="/static/download.svg" alt="" style="background: url(/static/download.svg)   cover no-repeat;
-mix-blend-mode: screen;">
+    <div class="navbar-end hidden md:flex">
+      <a class="btn btn-ghost text-white text-sm">
+        <img src="/static/download.svg" alt="Download" class="w-4 h-4 mr-1">
         Download
       </a>
     </div>
 
-    <!-- Menu (Desktop) -->
-
-    <!-- Menu (Mobile) -->
-    <div class="dropdown dropdown-end md:hidden">
-      <button class="btn btn-ghost">
-        <i class="fa-solid fa-bars text-lg"></i>
-      </button>
-
-      <ul tabindex="0" class="dropdown-content menu z-[1] bg-base-200 p-4 rounded-box shadow w-56 gap-2">
-        <li><a>Create Account</a></li>
-        <a class="btn btn-primary btn-sm">
-          Log in
-          <i class="fa fa-arrow-right text-xs" aria-hidden="true"></i>
-        </a>
-      </ul>
+    <!-- Mobile Menu -->
+    <div class="navbar-end md:hidden">
+      <div class="dropdown dropdown-end">
+        <label tabindex="0" class="btn btn-ghost">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </label>
+        <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 mt-4">
+          <li><a href="">News</a></li>
+          <li><a>About</a></li>
+          <li><a>Community</a></li>
+          <li><a>
+              <img src="/static/download.svg" alt="Download" class="w-4 h-4 mr-1">
+              Download
+            </a></li>
+        </ul>
+      </div>
     </div>
   </nav>
-
-  <!-- Botton navbar (mobile only) -->
 </div>
